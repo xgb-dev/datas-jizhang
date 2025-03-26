@@ -1,0 +1,305 @@
+/* reset.css */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* set default font for the whole page */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1;
+}
+
+/* default link styles */
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+  color: #00f;
+}
+
+/* default blockquote styles */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* reset table styles */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+/*  */
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -webkit-user-select: none; /* 针对 Chrome, Safari 和 Opera */
+  -moz-user-select: none; /* 针对 Firefox */
+  -ms-user-select: none; /* 针对 Internet Explorer 和 Edge */
+  user-select: none; /* 标准语法 */
+}
+.hidden {
+  display: none;
+}
+
+ul#bookmarkList {
+  padding: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #E9EDF0;
+  border-radius: 3px;
+}
+
+ul h3,ul li {
+  color: #666;
+  border-radius: 6px;
+}
+
+ul li:hover,
+ul h3:hover {
+  background-color: #E9EDF0;
+  color: #9b9b9b;
+}
+.edit-url:hover svg{
+  color: #00f;
+}
+
+ul li a.bookmark-item {
+  color: #9b9b9b;
+  padding: 0 10px;
+  line-height: 30px;
+  height: 30px;
+  width: 210px;
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+#container {
+  width: 300px;
+  height: 500px;
+  position: relative;
+}
+
+input,
+input:focus,
+textarea,
+textarea:focus {
+  outline: none;
+  border: none;
+}
+
+.top-title {
+  padding: 6px 4px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.top-title-right {
+  display: none;
+}
+
+.edit-url-box {
+  display: none;
+}
+
+.top-title:hover .top-title-right,
+ul li:hover .edit-url-box {
+  display: block;
+}
+
+.mark-modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  background-color: rgba(0, 0, 0, .2);
+  z-index: 2;
+}
+
+.fixed-window,
+.fixed-window-confirm,
+.fixed-window-edit-url {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  height: 150px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 12px;
+  z-index: 3;
+}
+
+.fixed-window-edit-url {
+  height: 250px;
+}
+
+.fixed-window-success {
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  overflow: hidden;
+  font-size: 12px;
+  border-radius: 10px;
+  z-index: 3;
+}
+
+.fixed-window-error {
+  width: 160px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  overflow: hidden;
+  font-size: 12px;
+  border-radius: 10px;
+  z-index: 3;
+}
+
+.w-content,
+.w-footer {
+  padding: 10px;
+}

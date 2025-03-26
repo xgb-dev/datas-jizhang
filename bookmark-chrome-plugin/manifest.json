@@ -1,0 +1,24 @@
+{
+  "name": "Hello bookmarks",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "bookmarks",
+    "contextMenus"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "zepto.min.js", "content.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "b10.png"
+  }
+}
